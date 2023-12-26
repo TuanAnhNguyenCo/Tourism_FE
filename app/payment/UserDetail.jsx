@@ -20,7 +20,7 @@ const UserDetail = () => {
 
       for (const i of item) {
         try {
-          const response = await fetch(`http://localhost:8080/tour/${i}`, {
+          const response = await fetch(`https://95bc-58-187-74-177.ngrok-free.app/tour/${i}`, {
             method: "GET",
             headers,
           });

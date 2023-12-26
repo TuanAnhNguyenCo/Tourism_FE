@@ -15,7 +15,7 @@ const TourEdit = () => {
     console.log("Submit form", formValue)
     // after call api
 
-    fetch(`http://localhost:8080/food/${id}`, {
+    fetch(`https://95bc-58-187-74-177.ngrok-free.app/food/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ const TourEdit = () => {
   }
 
   const deleteItem = (e,formValue,id) => {
-    fetch(`http://localhost:8080/food/${id}`, {
+    fetch(`https://95bc-58-187-74-177.ngrok-free.app/food/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

@@ -13,7 +13,7 @@ export default function MultiSelect({ setFormLocations }) {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`,
             };
-            const response = await fetch("http://localhost:8080/location", {
+            const response = await fetch("https://95bc-58-187-74-177.ngrok-free.app/location", {
                 method: 'GET',
                 headers,
             });

@@ -15,7 +15,7 @@ const SignUp = () => {
         e.preventDefault();
         console.log("Submit form", formValue)
         // after call api
-        fetch('http://localhost:8080/api/v1/auth/signup', {
+        fetch('https://95bc-58-187-74-177.ngrok-free.app/api/v1/auth/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

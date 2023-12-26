@@ -29,7 +29,7 @@ export default function Home() {
                 //Authorization: `Bearer ${token}`,
             };
 
-            const response = await fetch("http://localhost:8080/tour", {
+            const response = await fetch("https://95bc-58-187-74-177.ngrok-free.app/tour", {
                 method: "GET",
                 headers,
             });

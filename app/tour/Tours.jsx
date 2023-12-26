@@ -18,7 +18,7 @@ function Tours({ tours }) {
                 Authorization: `Bearer ${token}`,
             };
             const response = await fetch(
-                `http://localhost:8080/locationsOnTour/${id}`,
+                `https://95bc-58-187-74-177.ngrok-free.app/locationsOnTour/${id}`,
                 {
                     method: "GET",
                     headers,

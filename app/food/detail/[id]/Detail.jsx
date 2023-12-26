@@ -11,7 +11,7 @@ const Detail = ({ id }) => {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
       };
-      const response = await fetch(`http://localhost:8080/food/${id}`, {
+      const response = await fetch(`https://95bc-58-187-74-177.ngrok-free.app/food/${id}`, {
         method: 'GET',
         headers,
       });
@@ -33,7 +33,7 @@ const Detail = ({ id }) => {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
       };
-      const response = await fetch(`http://localhost:8080/foodOnLocation/${id}`, {
+      const response = await fetch(`https://95bc-58-187-74-177.ngrok-free.app/foodOnLocation/${id}`, {
         method: 'GET',
         headers,
       });

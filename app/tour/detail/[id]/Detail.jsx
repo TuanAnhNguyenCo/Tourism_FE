@@ -18,7 +18,7 @@ const Detail = ({ id }) => {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
       };
-      const response = await fetch(`http://localhost:8080/tour/comment/${id}`, {
+      const response = await fetch(`https://95bc-58-187-74-177.ngrok-free.app/tour/comment/${id}`, {
         method: "GET",
         headers,
       });
@@ -40,7 +40,7 @@ const Detail = ({ id }) => {
       'tourId': id
     }
 
-    fetch('http://localhost:8080/tour/comment', {
+    fetch('https://95bc-58-187-74-177.ngrok-free.app/tour/comment', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ const Detail = ({ id }) => {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
       };
-      const response = await fetch(`http://localhost:8080/tour/${id}`, {
+      const response = await fetch(`https://95bc-58-187-74-177.ngrok-free.app/tour/${id}`, {
         method: "GET",
         headers,
       });
@@ -90,7 +90,7 @@ const Detail = ({ id }) => {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
       };
-      const response = await fetch(`http://localhost:8080/tour/people/${id}`, {
+      const response = await fetch(`https://95bc-58-187-74-177.ngrok-free.app/tour/people/${id}`, {
         method: "GET",
         headers,
       });
@@ -110,7 +110,7 @@ const Detail = ({ id }) => {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`,
     };
-    const response = await fetch(`http://localhost:8080/tour/book/${id}`, {
+    const response = await fetch(`https://95bc-58-187-74-177.ngrok-free.app/tour/book/${id}`, {
       method: "GET",
       headers,
     });
@@ -126,7 +126,7 @@ const Detail = ({ id }) => {
         Authorization: `Bearer ${token}`,
       };
       const response = await fetch(
-        `http://localhost:8080/locationsOnTour/${id}`,
+        `https://95bc-58-187-74-177.ngrok-free.app/locationsOnTour/${id}`,
         {
           method: "GET",
           headers,
@@ -142,7 +142,7 @@ const Detail = ({ id }) => {
   const contract = async (e) => {
     const token = Cookies.get("accessToken"); // Lấy token từ cookie
     e.preventDefault();
-    fetch("http://localhost:8080/contract", {
+    fetch("https://95bc-58-187-74-177.ngrok-free.app/contract", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

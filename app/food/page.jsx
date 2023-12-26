@@ -25,7 +25,7 @@ export default function Home() {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
       };
-      const response = await fetch(`http://localhost:8080/user/role`, {
+      const response = await fetch(`https://95bc-58-187-74-177.ngrok-free.app/user/role`, {
         method: "GET",
         headers,
       });
@@ -50,7 +50,7 @@ export default function Home() {
         Authorization: `Bearer ${token}`,
       };
 
-      const response = await fetch("http://localhost:8080/food", {
+      const response = await fetch("https://95bc-58-187-74-177.ngrok-free.app/food", {
         method: "GET",
         headers,
       });
