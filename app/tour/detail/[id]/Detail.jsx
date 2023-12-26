@@ -314,16 +314,16 @@ const Detail = ({ id }) => {
                 <b className="mr-48">料金</b> {tour.price}万
               </li>
               <li className="mb-2">
-                <b className="mr-48">人数</b> {tour.max_capacity <= 0 ? tour.max_capacity : <span className="text-gray-400">"末登録"</span>}
+                <b className="mr-48">人数</b> {tour.max_capacity <= 0 ? tour.max_capacity : <span className="text-gray-400">末登録</span>}
               </li>
               <li className="mb-2">
-                <b className="mr-48">時間</b> {tour.due !== null ? tour.due : <span className="text-gray-400">"末登録"</span>}
+                <b className="mr-48">時間</b> {tour.due !== null ? tour.due : <span className="text-gray-400">末登録</span>}
               </li>
               {/* <li className='mb-2'>
                 <b className='mr-48'>場所</b> {tourInfo.location}
               </li> */}
               <li className="mb-2">
-                <b className="mr-48">状態</b> {tour.status !== null ? tour.status : <span className="text-gray-400">"末登録"</span>}
+                <b className="mr-48">状態</b> {tour.status !== null ? tour.status : <span className="text-gray-400">末登録</span>}
               </li>
               <li className="mb-2">
                 <ul>
